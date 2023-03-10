@@ -57,9 +57,9 @@ public class CustomListTest {
     @Test
     public void countCitiesTest(){
         list = MockCityList();
-        assertTrue(list.getCount() == 0);
+        assertEquals(list.getCount(),0);
         City city = new City("Foo", "BA");
         list.add(city);
-        assertTrue(list.getCount() == 1);
+        assertEquals(list.getCount(),1);
     }
 }
